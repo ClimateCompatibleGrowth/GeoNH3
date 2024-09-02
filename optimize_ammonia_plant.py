@@ -285,7 +285,7 @@ for location in demand_centers:
             optimize_ammonia_plant(wind_profile.sel(hexagon=hexagon, time=ammonia_demand_trucking.index),
                                    pv_profile.sel(hexagon=hexagon, time=ammonia_demand_trucking.index),
                                    ammonia_demand_trucking,
-                                   hexagons.loc[hexagon, 'theo_turbines'],
+                                   hexagons.loc[hexagon, 'theo_turbines']*4, # using 4MW turbines
                                    hexagons.loc[hexagon, 'theo_pv'],
                                    country_series,
                                    # water_limit = hexagons.loc[hexagon,'delta_water_m3']
@@ -333,7 +333,7 @@ for location in demand_centers:
                 optimize_ammonia_plant(wind_profile.sel(hexagon=hexagon, time=ammonia_demand_pipeline.index),
                                        pv_profile.sel(hexagon=hexagon, time=ammonia_demand_pipeline.index),
                                        ammonia_demand_pipeline,
-                                       hexagons.loc[hexagon, 'theo_turbines'],
+                                       hexagons.loc[hexagon, 'theo_turbines']*4, # using 4 MW turbines
                                        hexagons.loc[hexagon, 'theo_pv'],
                                        country_series,
                                        # water_limit = hexagons.loc[hexagon,'delta_water_m3'],
