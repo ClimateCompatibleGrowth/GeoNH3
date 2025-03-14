@@ -1,5 +1,8 @@
 # GEONH3
 
+>[!NOTE]
+>We now have a new repository for you to use! The new [GeoX](https://github.com/ClimateCompatibleGrowth/GeoX.git) repository contains both this repository and the [GeoH2](https://github.com/ClimateCompatibleGrowth/GeoH2.git) repository.
+
 GeoNH3 calculates the locational cost of green ammonia production, storage, transport, and conversion to meet demand in a specified location. 
 These costs can be compared to current or projected prices for energy and chemical feedstocks in the region to assess the competitiveness of green ammonia.
 The model outputs the levelized cost of ammonia (LCOA) at the demand location including production, storage, transport, and conversion costs. 
